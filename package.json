@@ -1,0 +1,29 @@
+{
+  "name": "joke_project",
+  "version": "1.0.0",
+  "description": "",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start:api": "npm run tsc --workspace=@joke_geniuspacs/lib && npm run start --workspace=@joke_geniuspacs/api",
+    "build:app": "npm run build --workspace=@joke_geniuspacs/app",
+    "start:app": "npm run tsc --workspace=@joke_geniuspacs/lib && npm run build:app && npm run preview --workspace=@joke_geniuspacs/app",
+    "dev:api": "npm run dev --workspace=@joke_geniuspacs/api",
+    "dev:app": "npm run dev --workspace=@joke_geniuspacs/app",
+    "test:api": "npm run test --workspace=@joke_geniuspacs/api"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/dotenv": "^8.2.0",
+    "@types/jest": "^29.0.2",
+    "@types/node": "^18.7.17",
+    "jest": "^29.0.3",
+    "typescript": "^4.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.2"
+  }
+}

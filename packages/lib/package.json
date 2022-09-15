@@ -1,0 +1,13 @@
+{
+  "name": "@joke_geniuspacs/lib",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./build/index.js",
+  "scripts": {
+    "tsc": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

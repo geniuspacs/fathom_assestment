@@ -1,0 +1,9 @@
+packages/api/build
+packages/api/.env
+
+packages/app/build
+packages/app/.env
+
+node_modules
+
+package-lock.json
